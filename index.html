@@ -38,7 +38,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Почитать отрывки</a>
+                        <a href="#"
+                        class="nav-link"
+                        data-bs-toggle="modal"
+                        data-bs-target="#excerptModal">
+                        Почитать отрывки
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -62,9 +67,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 text-center">
-                <img src="./Finalyy.png"
-                    class="img-fluid book-image"
-                    alt="Book cover">
+                    <div class="book-image-wrapper">
+                        <img src="./Finalyy.png" class="img-fluid book-image" alt="Book cover">
+                    </div>
                 </div>
             </div>
         </div>
@@ -122,7 +127,7 @@
                             </div>
                             <div class="plan-book-meta">роман • контркультура • психологическая проза</div>
                         </div>
-
+                        
                         <div class="plan-item">
                             <div class="plan-item-top">
                                 <h6 class="plan-book-title">Раскармливание</h6>
@@ -131,7 +136,50 @@
                             <div class="plan-book-meta">роман • контркультура • ужасы</div>
                         </div>
 
+                        <div class="plan-item">
+                            <div class="plan-item-top">
+                                <h6 class="plan-book-title">Божественное казино</h6>
+                                <span class="plan-book-words">45,000 слов</span>
+                            </div>
+                            <div class="plan-book-meta">роман • сатира • массовая проза</div>
+                        </div>
+
+                        <div class="plan-item">
+                            <div class="plan-item-top">
+                                <h6 class="plan-book-title">Потухшее солнце</h6>
+                                <span class="plan-book-words">50,000 слов</span>
+                            </div>
+                            <div class="plan-book-meta">повесть • фантастика • массовая проза</div>
+                        </div>
+
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Excerpt Modal -->
+    <div class="modal fade" id="excerptModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content excerpt-modal-content">
+
+                <div class="modal-header excerpt-modal-header">
+                    <h5 class="modal-title excerpt-modal-title">Отрывки</h5>
+                    <button type="button"
+                            class="btn-close btn-close-white excerpt-modal-close"
+                            data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body excerpt-modal-body">
+
+                    <div class="excerpt-list">
+
+                        <a href="#" class="excerpt-item">
+                            Ждём эпизоды
+                        </a>
+
+                    </div>
+
                 </div>
             </div>
         </div>
