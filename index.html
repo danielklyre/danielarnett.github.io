@@ -33,6 +33,14 @@
                         <a href="#"
                         class="nav-link"
                         data-bs-toggle="modal"
+                        data-bs-target="#plansSteps">
+                        Этапы
+                        </a>
+                    </li>
+                    <li class="nav-item pe-lg-3">
+                        <a href="#"
+                        class="nav-link"
+                        data-bs-toggle="modal"
                         data-bs-target="#plansModal">
                         Планы
                         </a>
@@ -42,7 +50,7 @@
                         class="nav-link"
                         data-bs-toggle="modal"
                         data-bs-target="#excerptModal">
-                        Почитать отрывки
+                        Читать
                         </a>
                     </li>
                 </ul>
@@ -105,7 +113,7 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content plans-modal-content">
                 <div class="modal-header plans-modal-header">
-                    <h5 class="modal-title plans-modal-title" id="plansModalLabel">Будущие книги</h5>
+                    <h5 class="modal-title plans-modal-title" id="plansModalLabel">Запланированные книги</h5>
                     <button type="button" class="btn-close btn-close-white plans-modal-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
 
@@ -150,6 +158,14 @@
                                 <span class="plan-book-words">50,000 слов</span>
                             </div>
                             <div class="plan-book-meta">повесть • фантастика • массовая проза</div>
+                        </div>
+
+                        <div class="plan-item">
+                            <div class="plan-item-top">
+                                <h6 class="plan-book-title">Под ферраллитом</h6>
+                                <span class="plan-book-words">55,000 слов</span>
+                            </div>
+                            <div class="plan-book-meta">инкунакула • ужасы • контркультура</div>
                         </div>
 
                     </div>
@@ -199,6 +215,160 @@
         </div>
     </div>
 
+        <!-- Steps Modal -->
+    <div class="modal fade" id="plansSteps" tabindex="-1" aria-labelledby="plansStepsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content steps-modal-content">
+                <div class="modal-header steps-modal-header">
+                    <h5 class="modal-title steps-modal-title" id="plansStepsLabel">Список этапов работы</h5>
+                    <button type="button"
+                            class="btn-close btn-close-white steps-modal-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Закрыть"></button>
+                </div>
+
+                <div class="modal-body steps-modal-body">
+
+                    <div class="steps-list">
+
+                        <div class="step-item step-item-accent">
+                            <div class="step-item-top">
+                                <div>
+                                    <h6 class="step-title">Этап 0. Черновик</h6>
+                                </div>
+                                <span class="step-time">60–90 дней</span>
+                            </div>
+
+                            <div class="step-block">
+                                <div class="step-label">Цель:</div>
+                                <p class="step-text">Сделать полный текст от начала до конца.</p>
+                            </div>
+
+                            <div class="step-block">
+                                <div class="step-label">Что входит:</div>
+                                <p class="step-text">Все возможные сцены; движок сюжета; герои.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-item-top">
+                                <div>
+                                    <h6 class="step-title">Этап 1. Пауза</h6>
+                                </div>
+                                <span class="step-time">10–14 дней</span>
+                            </div>
+
+                            <div class="step-block">
+                                <div class="step-label">Цель:</div>
+                                <p class="step-text">Убрать «эффект автора».</p>
+                            </div>
+
+                            <div class="step-block">
+                                <div class="step-label">Что входит:</div>
+                                <p class="step-text">Забывание деталей; текст превращается в чужой.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-item-top">
+                                <div>
+                                    <h6 class="step-title">Этап 2. Структурная редактура</h6>
+                                </div>
+                                <span class="step-time">10–20 дней</span>
+                            </div>
+
+                            <div class="step-block">
+                                <div class="step-label">Цель:</div>
+                                <p class="step-text">Сделать роман работающей системой.</p>
+                            </div>
+
+                            <div class="step-block">
+                                <div class="step-label">Что входит:</div>
+                                <p class="step-text">
+                                    Чтение всего романа; создание карты романа; удаление сцен;
+                                    объединение сцен; изменение мотиваций; усиление конфликтов;
+                                    правка арок героев.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-item-top">
+                                <div>
+                                    <h6 class="step-title">Этап 3. Перепись</h6>
+                                </div>
+                                <span class="step-time">30–60 дней</span>
+                            </div>
+
+                            <div class="step-block">
+                                <div class="step-label">Цель:</div>
+                                <p class="step-text">Привести текст в соответствие структуре.</p>
+                            </div>
+
+                            <div class="step-block">
+                                <div class="step-label">Что входит:</div>
+                                <p class="step-text">
+                                    Переписывание сцен; резка 20–40% текста; выравнивание персонажей;
+                                    устранение лишнего; усиление слабых мест.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-item-top">
+                                <div>
+                                    <h6 class="step-title">Этап 4. Линейная чистка</h6>
+                                </div>
+                                <span class="step-time">10–20 дней</span>
+                            </div>
+
+                            <div class="step-block">
+                                <div class="step-label">Цель:</div>
+                                <p class="step-text">Сделать текст читаемым и плотным.</p>
+                            </div>
+
+                            <div class="step-block">
+                                <div class="step-label">Что входит:</div>
+                                <p class="step-text">
+                                    Удаление повторов; упрощение перегруженных фраз; выравнивание стиля;
+                                    чистка диалогов; проверка ритма.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="step-item">
+                            <div class="step-item-top">
+                                <div>
+                                    <h6 class="step-title">Этап 5. Финальный проход</h6>
+                                </div>
+                                <span class="step-time">3–7 дней</span>
+                            </div>
+
+                            <div class="step-block">
+                                <div class="step-label">Цель:</div>
+                                <p class="step-text">Проверить текст как читатель.</p>
+                            </div>
+
+                            <div class="step-block">
+                                <div class="step-label">Что входит:</div>
+                                <p class="step-text">
+                                    Чтение всего романа и поиск провалов, сбоев, слабых мест.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="site-footer-text">Daniel A. Arnett. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
     <!--Basic scripts-->
     <script src="./bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
