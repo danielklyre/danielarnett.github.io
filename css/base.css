@@ -1,0 +1,311 @@
+/* --------------------------------------------
+    Root Partition: General
+---------------------------------------------- */
+
+:root {
+    --color-gradient: linear-gradient(
+        90deg,
+        #fff3cf 0%,
+        #f3ddb0 18%,
+        #e2bf7f 38%,
+        #d5b583 58%,
+        #f1dfb8 78%,
+        #fff1cc 100%
+    );
+    --size-skew: 1rem;
+
+    --font-brand-ui: "Source Sans 3", sans-serif;
+    --font-display: "Viaoda Libre", serif;
+    --font-text: "Source Serif 4", serif;
+}
+
+body {
+    overflow-y: scroll;
+    background-color: #d8d8d834;
+    font-family: var(--font-text);
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.row > * {
+    position: relative;
+}
+
+.text-content .subtitle,
+.text-content .form-label.text-d5b583,
+.text-content .custom-progress,
+.text-content .custom-progress-two {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-close:focus,
+.btn-close:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+/* --------------------------------------------
+    Typography
+---------------------------------------------- */
+
+.navbar-brand.logo,
+.navbar .nav-link,
+.progress-text,
+.form-label.text-d5b583 {
+    font-family: var(--font-brand-ui);
+}
+
+.title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    line-height: 1.08;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+    color: #d5b583;
+
+    /* было слишком мыльно — делаем чище */
+    text-shadow:
+        0 1px 2px rgba(0,0,0,0.55),
+        0 0 4px rgba(213,181,131,0.12);
+}
+
+.subtitle {
+    font-family: var(--font-text);
+    font-style: italic;
+    font-size: clamp(1rem, 1.1vw, 1.12rem);
+    line-height: 1.45;
+    letter-spacing: 0.015em;
+    color: #c8a874;
+    opacity: 1;
+
+    /* сильное свечение убираем */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.45);
+
+    margin-top: -0.4rem;
+    margin-bottom: 1.35rem;
+}
+
+.paragraph {
+    font-family: var(--font-text);
+    font-size: 1.03rem;
+    line-height: 1.75;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #e8ddca;
+    opacity: 1;
+
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+
+    text-align: justify;
+    text-justify: inter-word;
+    text-wrap: pretty;
+
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+.paragraph::first-letter {
+    font-size: 1.45em;
+    line-height: 1;
+    color: #d5b583;
+    font-family: var(--font-text);
+    font-style: italic;
+    font-weight: 600;
+}
+
+.book-two-section .paragraph {
+    color: #dfd8eb;
+    opacity: 1;
+}
+
+.book-two-section .title {
+    color: #CDB398;
+    text-shadow:
+        0 1px 2px rgba(0,0,0,0.6),
+        0 0 5px rgba(180,160,255,0.12);
+}
+
+.book-two-section .subtitle {
+    color: #CDB398;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.45);
+}
+
+/* --------------------------------------------
+    Navbar — black glass
+---------------------------------------------- */
+
+.navbar {
+    transition:
+        background 0.35s ease,
+        box-shadow 0.35s ease,
+        padding 0.35s ease,
+        border-color 0.35s ease;
+    padding: 18px 0;
+    background: linear-gradient(
+        180deg,
+        rgba(12, 8, 10, 0.82) 0%,
+        rgba(8, 6, 8, 0.9) 100%
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(213,181,131,0.09);
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.02);
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('./static-texture.webp');
+    opacity: 0.08;
+    pointer-events: none;
+}
+
+.navbar .container {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand.logo {
+    display: inline-block;
+    font-size: clamp(1.65rem, 2vw, 2.1rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.05;
+    white-space: nowrap;
+}
+
+.navbar .nav-link {
+    color: #e8dcc8;
+    font-size: 1.06rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin: 0 12px;
+    padding: 6px 4px;
+    position: relative;
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #f1dfb8;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(
+        90deg,
+        rgba(157,104,76,0.9),
+        rgba(213,181,131,1),
+        rgba(236,216,180,0.95)
+    );
+    box-shadow: 0 0 8px rgba(213,181,131,0.18);
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar .nav-link.active {
+    color: #f3e7d0;
+}
+
+.navbar .nav-link.active::after {
+    width: 100%;
+}
+
+/* --------------------------------------------
+    Sticky состояние
+---------------------------------------------- */
+
+.nav-sticky.navbar {
+    padding: 11px 0;
+    background: linear-gradient(
+        180deg,
+        rgba(10, 7, 9, 0.94) 0%,
+        rgba(7, 5, 7, 0.97) 100%
+    );
+    border-bottom: 1px solid rgba(213,181,131,0.12);
+    box-shadow:
+        0 10px 26px rgba(0,0,0,0.45),
+        0 0 14px rgba(213,181,131,0.04),
+        inset 0 1px 0 rgba(255,255,255,0.02);
+}
+
+.navbar .gradient {
+    display: inline-block;
+    background-image: var(--color-gradient);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent !important;
+    text-shadow:
+        0 1px 1px rgba(0,0,0,0.32),
+        0 0 6px rgba(255,236,190,0.08);
+}
+
+/* --------------------------------------------
+    Footer
+---------------------------------------------- */
+
+.site-footer {
+    position: relative;
+    overflow: hidden;
+    padding: 1.35rem 0;
+    background: linear-gradient(
+        180deg,
+        rgba(12, 8, 10, 0.96),
+        rgba(8, 6, 8, 0.98)
+    );
+    backdrop-filter: blur(4px);
+    border-top: 1px solid rgba(213,181,131,0.1);
+}
+
+.site-footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('./static-texture.webp');
+    opacity: 0.18;
+}
+
+.site-footer-text {
+    margin: 0;
+    text-align: center;
+    font-family: var(--font-brand-ui);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #d5b583;
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+    .site-footer {
+        padding: 1.05rem 0;
+    }
+
+    .site-footer-text {
+        font-size: 0.84rem;
+        line-height: 1.45;
+    }
+}

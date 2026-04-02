@@ -1,0 +1,292 @@
+/* --------------------------------------------
+    Section Main
+---------------------------------------------- */
+
+.book-one-section {
+    background: linear-gradient(
+        180deg,
+        #3a2324 0%,
+        #2f1d21 100%
+    );
+    color: #d5b583;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-one-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('./static-texture.webp');
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.book-one-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.text-content h2 {
+    font-weight: 400;
+}
+
+.text-content p {
+    line-height: 1.8;
+}
+
+.book-image {
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.pt-120 {
+    padding-top: 120px;
+}
+
+.pb-120 {
+    padding-bottom: 120px;
+}
+
+.btn-primary {
+    background-color: #493547;
+    border-color: #493547;
+    border-radius: 0;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+}
+
+/* --------------------------------------------
+    Section Second
+---------------------------------------------- */
+
+.book-two-section {
+    background: linear-gradient(
+        180deg,
+        #272235 0%,
+        #1f1a2b 100%
+    );
+    color: #d5b583;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-two-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('./static-texture.webp');
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.book-two-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* --------------------------------------------
+    Progress bars — unified, section-aware
+---------------------------------------------- */
+
+.form-label.text-d5b583 {
+    font-size: 0.98rem;
+    letter-spacing: 0.015em;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+}
+
+.book-one-section .progress-text,
+.book-two-section .progress-text {
+    font-size: 0.92rem;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+}
+
+/* ---------- SECTION ONE ---------- */
+
+.book-one-section .form-label.text-d5b583 {
+    color: #cfae7d;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.45);
+}
+
+.book-one-section .custom-progress {
+    position: relative;
+    height: 34px;
+    border-radius: 16px;
+    overflow: hidden;
+    background:
+        linear-gradient(180deg, #241314 0%, #321a1a 45%, #2a1516 100%);
+    border: 1px solid rgba(120, 78, 58, 0.45);
+    box-shadow:
+        inset 0 3px 7px rgba(0,0,0,0.65),
+        inset 0 -2px 4px rgba(255,220,180,0.04),
+        0 1px 1px rgba(255,255,255,0.03);
+}
+
+.book-one-section .custom-progress::before {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 13px;
+    background:
+        linear-gradient(180deg, rgba(0,0,0,0.18), rgba(255,255,255,0.02));
+    box-shadow:
+        inset 0 1px 1px rgba(255,255,255,0.03),
+        inset 0 -2px 4px rgba(0,0,0,0.35);
+    pointer-events: none;
+}
+
+.book-one-section .custom-progress::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.04), transparent 40%, rgba(0,0,0,0.08) 100%);
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+
+.book-one-section .custom-progress-bar {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    bottom: 3px;
+    width: 0;
+    border-radius: 13px;
+    background:
+        linear-gradient(
+            90deg,
+            #7a5238 0%,
+            #a06b4f 22%,
+            #c49a6c 48%,
+            #d5b583 72%,
+            #ecd6ab 100%
+        );
+    box-shadow:
+        inset 0 1px 1px rgba(255,245,220,0.35),
+        inset 0 -2px 4px rgba(90,45,20,0.35),
+        0 0 10px rgba(212,166,112,0.18);
+    transition: width 0.6s ease;
+}
+
+.book-one-section .custom-progress-bar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.18), transparent 35%, rgba(0,0,0,0.08) 100%);
+    pointer-events: none;
+}
+
+.book-one-section .progress-text {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ead8b8;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    pointer-events: none;
+    text-shadow:
+        0 1px 2px rgba(0,0,0,0.8),
+        0 0 3px rgba(58,22,21,0.7);
+}
+
+/* ---------- SECTION TWO ---------- */
+
+.book-two-section .form-label.text-d5b583 {
+    color: #b8abd9;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.book-two-section .custom-progress-two {
+    position: relative;
+    height: 34px;
+    border-radius: 16px;
+    overflow: hidden;
+    background:
+        linear-gradient(180deg, #161320 0%, #201b2d 45%, #181421 100%);
+    border: 1px solid rgba(91, 84, 125, 0.45);
+    box-shadow:
+        inset 0 3px 7px rgba(0,0,0,0.7),
+        inset 0 -2px 4px rgba(220,220,255,0.04),
+        0 1px 1px rgba(255,255,255,0.03);
+}
+
+.book-two-section .custom-progress-two::before {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 13px;
+    background:
+        linear-gradient(180deg, rgba(0,0,0,0.2), rgba(255,255,255,0.02));
+    box-shadow:
+        inset 0 1px 1px rgba(255,255,255,0.03),
+        inset 0 -2px 4px rgba(0,0,0,0.4);
+    pointer-events: none;
+}
+
+.book-two-section .custom-progress-two::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.04), transparent 40%, rgba(0,0,0,0.1) 100%);
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+
+.book-two-section .custom-progress-bar-two {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    bottom: 3px;
+    width: 0;
+    border-radius: 13px;
+    background:
+        linear-gradient(
+            90deg,
+            #4c4666 0%,
+            #6a5d8c 20%,
+            #8d7fb6 45%,
+            #b8abd9 72%,
+            #ddd5f2 100%
+        );
+    box-shadow:
+        inset 0 1px 1px rgba(245,245,255,0.28),
+        inset 0 -2px 4px rgba(42,35,66,0.45),
+        0 0 10px rgba(160,145,220,0.15);
+    transition: width 0.6s ease;
+}
+
+.book-two-section .custom-progress-bar-two::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.16), transparent 35%, rgba(0,0,0,0.1) 100%);
+    pointer-events: none;
+}
+
+.book-two-section .progress-text {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ece7f8;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    pointer-events: none;
+    text-shadow:
+        0 1px 2px rgba(0,0,0,0.85),
+        0 0 4px rgba(31,26,43,0.7);
+}
