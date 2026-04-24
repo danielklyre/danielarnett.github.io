@@ -83,18 +83,21 @@
     }
 
     .book-one-section,
-    .book-two-section {
+    .book-two-section,
+    .book-three-section {
         overflow: hidden;
     }
 
     .book-one-section .container,
-    .book-two-section .container {
+    .book-two-section .container,
+    .book-three-section .container {
         padding-left: 18px;
         padding-right: 18px;
     }
 
     .book-one-section .row,
-    .book-two-section .row {
+    .book-two-section .row,
+    .book-three-section .row {
         row-gap: 28px;
     }
 
@@ -163,14 +166,16 @@
     }
 
     .book-one-section .custom-progress,
-    .book-two-section .custom-progress-two {
+    .book-two-section .custom-progress-two,
+    .book-three-section .custom-progress-three {
         width: 100%;
         max-width: 100%;
         height: 32px;
     }
 
     .book-one-section .progress-text,
-    .book-two-section .progress-text {
+    .book-two-section .progress-text,
+    .book-three-section .progress-text {
         font-size: 0.86rem;
         letter-spacing: 0.02em;
     }
@@ -222,7 +227,8 @@
     }
 
     .book-one-section .container,
-    .book-two-section .container {
+    .book-two-section .container,
+    .book-three-section .container {
         padding-left: 14px;
         padding-right: 14px;
     }
@@ -254,23 +260,27 @@
     }
 
     .book-one-section .custom-progress,
-    .book-two-section .custom-progress-two {
+    .book-two-section .custom-progress-two,
+    .book-three-section .custom-progress-three {
         height: 30px;
         border-radius: 14px;
     }
 
     .book-one-section .custom-progress::before,
-    .book-two-section .custom-progress-two::before {
+    .book-two-section .custom-progress-two::before,
+    .book-three-section .custom-progress-three::before {
         border-radius: 11px;
     }
 
     .book-one-section .custom-progress-bar,
-    .book-two-section .custom-progress-bar-two {
+    .book-two-section .custom-progress-bar-two,
+    .book-three-section .custom-progress-bar-three {
         border-radius: 11px;
     }
 
     .book-one-section .progress-text,
-    .book-two-section .progress-text {
+    .book-two-section .progress-text,
+    .book-three-section .progress-text {
         font-size: 0.8rem;
     }
 }
@@ -299,7 +309,8 @@
     }
 
     .book-one-section .progress-text,
-    .book-two-section .progress-text {
+    .book-two-section .progress-text,
+    .book-three-section .progress-text {
         font-size: 0.74rem;
     }
 }

@@ -85,6 +85,31 @@
     z-index: 1;
 }
 
+.book-three-section {
+    background: linear-gradient(
+        180deg,
+        #1c2a25 0%,
+        #101915 100%
+    );
+    color: #d5c8a8;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-three-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../static-texture.webp');
+    opacity: 0.26;
+    z-index: 0;
+}
+
+.book-three-section .container {
+    position: relative;
+    z-index: 1;
+}
+
 /* --------------------------------------------
     Progress bars — unified, section-aware
 ---------------------------------------------- */
@@ -97,7 +122,8 @@
 }
 
 .book-one-section .progress-text,
-.book-two-section .progress-text {
+.book-two-section .progress-text,
+.book-three-section .progress-text {
     font-size: 0.92rem;
     letter-spacing: 0.02em;
     font-weight: 700;
@@ -289,4 +315,98 @@
     text-shadow:
         0 1px 2px rgba(0,0,0,0.85),
         0 0 4px rgba(31,26,43,0.7);
+}
+
+/* ---------- SECTION THREE ---------- */
+
+.book-three-section .form-label.text-d5b583 {
+    color: #b3c2a3;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.52);
+}
+
+.book-three-section .custom-progress-three {
+    position: relative;
+    height: 34px;
+    border-radius: 16px;
+    overflow: hidden;
+    background:
+        linear-gradient(180deg, #0f1714 0%, #17231e 45%, #111914 100%);
+    border: 1px solid rgba(104, 131, 109, 0.42);
+    box-shadow:
+        inset 0 3px 7px rgba(0,0,0,0.68),
+        inset 0 -2px 4px rgba(214,226,207,0.04),
+        0 1px 1px rgba(255,255,255,0.03);
+}
+
+.book-three-section .custom-progress-three::before {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 13px;
+    background:
+        linear-gradient(180deg, rgba(0,0,0,0.2), rgba(255,255,255,0.02));
+    box-shadow:
+        inset 0 1px 1px rgba(255,255,255,0.03),
+        inset 0 -2px 4px rgba(0,0,0,0.38);
+    pointer-events: none;
+}
+
+.book-three-section .custom-progress-three::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.04), transparent 40%, rgba(0,0,0,0.1) 100%);
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+
+.book-three-section .custom-progress-bar-three {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    bottom: 3px;
+    width: 0;
+    border-radius: 13px;
+    background:
+        linear-gradient(
+            90deg,
+            #355041 0%,
+            #4e6d57 24%,
+            #74907a 48%,
+            #9fb28f 72%,
+            #dbe3c3 100%
+        );
+    box-shadow:
+        inset 0 1px 1px rgba(244,248,236,0.22),
+        inset 0 -2px 4px rgba(24,40,31,0.4),
+        0 0 12px rgba(139,168,136,0.16);
+    transition: width 0.6s ease;
+}
+
+.book-three-section .custom-progress-bar-three::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.16), transparent 35%, rgba(0,0,0,0.1) 100%);
+    pointer-events: none;
+}
+
+.book-three-section .progress-text {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #edf0df;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    pointer-events: none;
+    text-shadow:
+        0 1px 2px rgba(0,0,0,0.85),
+        0 0 4px rgba(16,25,21,0.72);
 }
