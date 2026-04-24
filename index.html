@@ -74,7 +74,7 @@
                         <label for="bookProgress" class="pb-1 form-label text-d5b583">Прогресс Этапа 0: Черновик</label>
                         <div class="custom-progress">
                             <div class="custom-progress-bar" id="bookProgress"></div>
-                            <div class="progress-text" id="progressText">0 / 45k слов</div>
+                            <div class="progress-text" id="progressText">0 / 60 000 слов</div>
                         </div>
                     </div>
                 </div>
@@ -89,25 +89,53 @@
 
     <section class="book-two-section py-5">
         <div class="container pt-120 pb-120">
-            <div class="row align-items-center">
+            <div class="row align-items-center g-lg-5">
 
-            <div class="col-lg-6 text-content">
+            <div class="col-lg-6 text-content order-1 order-lg-2">
                 <h2 class="title text-center mb-4">Дети Крампуса: Тени Йоля</h2>
                 <h4 class="subtitle text-center">роман • тёмное фэнтези • фолк-хоррор</h4>
-                <p class="paragraph pb-4">В болотном городе, где бойни и выделочные цеха кормят всех, дети рано узнают, что страх — часть порядка вещей. Йоль здесь не про подарки: в это время дети стараются не попадаться на глаза и не задавать лишних вопросов. Когда накануне праздника на товарном поезде появляется мальчик без имени, в городе начинают пропадать дети, а старые истории перестают казаться выдумкой. Никто не говорит об этом вслух, но все помнят: Йоль — это договор, и если его нарушить, за долгом приходит тот, кого здесь не называют по имени.</p>
+                <p class="paragraph pb-4">В городе посреди болот, где бойни и выделочные цеха кормят всех, дети рано узнают, что страх — часть порядка вещей. Йоль здесь не про подарки: в это время дети стараются не попадаться на глаза и не задавать лишних вопросов. Когда накануне праздника на товарном поезде появляется мальчик без имени, в городе начинают пропадать дети, а старые истории перестают казаться выдумкой. Никто не говорит об этом вслух, но все помнят: Йоль — это договор, и если его нарушить, за долгом приходит тот, кого здесь не называют по имени.</p>
                 <div class="text-center mt-4">
                     <label for="bookProgress2" class="pb-1 form-label text-d5b583">Прогресс Этапа 0: Черновик</label>
                     <div class="custom-progress-two">
                         <div class="custom-progress-bar-two" id="bookProgress2"></div>
-                        <div class="progress-text" id="progressText2">0 / 95k слов</div>
+                        <div class="progress-text" id="progressText2">0 / 80 000 слов</div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 text-center">
-                <img src="./images/Book1.png"
-                    class="img-fluid book-image"
-                    alt="Book cover">
+            <div class="col-lg-6 text-center order-2 order-lg-1">
+                <div class="book-image-wrapper">
+                    <img src="./images/Book1.png"
+                        class="img-fluid book-image"
+                        alt="Book cover">
+                </div>
             </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-three-section py-5">
+        <div class="container pt-120 pb-120">
+            <div class="row align-items-center g-lg-5">
+
+                <div class="col-lg-6 text-content">
+                    <h2 class="title text-center mb-4">Iam sero est</h2>
+                    <h4 class="subtitle text-center">инкунакула • трансгрессивная проза • психологическая проза</h4>
+                    <p class="paragraph pb-4">Эти новеллы сосредоточены на состояниях, в которых человек перестаёт быть надёжным свидетелем собственной жизни. Насилие, вина, зависимость и искажённая память медленно размывают границы между реальным и воображаемым, оставляя героев наедине с тем, что невозможно ни оправдать, ни забыть. Сюжеты разворачиваются в пространстве психологического надлома, где близость оборачивается угрозой, а попытка спастись — новой формой самообмана. Это проза на границе внутреннего опыта и разрушения, рассчитанная на читателя, готового к прямому, лишённому утешения взгляду на человеческую уязвимость и опыту без дистанции и без обещания облегчения.</p>
+                    <div class="text-center mt-4">
+                        <label for="bookProgress3" class="pb-1 form-label text-d5b583">Прогресс: На очереди (не пишется)</label>
+                        <div class="custom-progress-three">
+                            <div class="custom-progress-bar-three" id="bookProgress3"></div>
+                            <div class="progress-text" id="progressText3">0 / 65 000 слов</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="book-image-wrapper">
+                        <img src="./images/Book3.png" class="img-fluid book-image" alt="Обложка книги Iam sero est">
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -137,6 +165,13 @@
 
                         <div class="excerpt-group">
                             <div class="excerpt-group-title">Дети Крампуса: тени Йоля</div>
+                            <div class="excerpt-list">
+                                <a href="#" class="excerpt-item">Будет доступно на Этапе 3</a>
+                            </div>
+                        </div>
+
+                        <div class="excerpt-group">
+                            <div class="excerpt-group-title">Потухшее солнце</div>
                             <div class="excerpt-list">
                                 <a href="#" class="excerpt-item">Будет доступно на Этапе 3</a>
                             </div>
@@ -377,6 +412,40 @@
             progressBar2.style.width = currentPercent2 + '%';
             progressText2.innerText = `${Math.round(currentWords2)} / ${wordsGoal2} слов`;
         }, intervalTime);
+    </script>
+
+    <script>
+        const wordsWritten3 = 19145;
+        const wordsGoal3 = 65000;
+
+        const progressBar3 = document.getElementById('bookProgress3');
+        const progressText3 = document.getElementById('progressText3');
+
+        const targetPercent3 = (wordsWritten3 / wordsGoal3) * 100;
+
+        let currentPercent3 = 0;
+        let currentWords3 = 0;
+
+        const duration3 = 1200;
+        const intervalTime3 = 15;
+        const steps3 = Math.ceil(duration3 / intervalTime3);
+
+        const percentStep3 = targetPercent3 / steps3;
+        const wordsStep3 = wordsWritten3 / steps3;
+
+        const interval3 = setInterval(() => {
+            currentPercent3 += percentStep3;
+            currentWords3 += wordsStep3;
+
+            if (currentPercent3 >= targetPercent3) {
+                currentPercent3 = targetPercent3;
+                currentWords3 = wordsWritten3;
+                clearInterval(interval3);
+            }
+
+            progressBar3.style.width = currentPercent3 + '%';
+            progressText3.innerText = `${Math.round(currentWords3)} / ${wordsGoal3} слов`;
+        }, intervalTime3);
     </script>
 
     <script>
